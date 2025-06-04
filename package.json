@@ -1,7 +1,7 @@
 {
-  "name": "solo",
-  "description": "A Ghost theme",
-  "version": "1.0.0-alpha.1",
+  "name": "rwf",
+  "description": "A Ghost theme for Redwoods Wonder Forge",
+  "version": "1.0.0-rc.1",
   "private": true,
   "engines": {
     "ghost": ">=5.0.0"
@@ -74,7 +74,7 @@
           "Large background",
           "Typographic profile"
         ],
-        "default": "Large background",
+        "default": "Side by side",
         "group": "homepage"
       },
       "primary_header": {
@@ -95,6 +95,15 @@
           "Parallax"
         ],
         "default": "Classic",
+        "group": "homepage"
+      },
+      "show_instagram_feed": {
+        "type": "select",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "default": "No",
         "group": "homepage"
       }
     }
