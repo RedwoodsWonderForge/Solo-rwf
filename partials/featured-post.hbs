@@ -1,0 +1,20 @@
+<section class="gh-content">
+  {{#get "posts" filter="featured:true" limit="1" as |featured|}}
+    {{#foreach featured}}
+      <h3>{{title}}</h3>
+      {{> 'feature-image'}}
+      <p>{{excerpt}}</p>
+
+    <div class="kg-card kg-button-card kg-align-center">
+      <a
+        href="{{url}}"
+        class="kg-btn kg-btn-accent"
+      >Read more</a>
+    </div>
+    {{else}}
+      {{> "social-link-list"}}
+    {{/foreach}}
+  {{else}}
+      {{> "social-link-list"}}
+  {{/get}}
+</section>
